@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>College OLX</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
+    <title>College OLX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script>
+        function handleShopNowClick() {
+            alert("You clicked on 'Shop Now' button!");
+
+            window.location.href = "#";
+        }
+
+        // Function to handle "Sell Now" button click
+        function handleSellNowClick() {
+            alert("You clicked on 'Sell Now' button!");
+
+            window.location.href = "http://127.0.0.1:5500/buy.html";
+        }
+    </script>
 </head>
+
 <body>
-	<header>
-		<h1>College OLX</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Buy</a></li>
-				<li><a href="#">Sell</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="banner">
-			<h2>Welcome to College OLX</h2>
-			<p><i>Buy and sell goods at cheaper prices with other students just like OLX.</i></p>
-			<a href="#" class="btn">Shop Now</a>
-		</section>
-		<section class="featured">
-			<h2>Featured Products</h2>
-			<div class="products">
-				<div class="product">
-					<img src="bottle.jpeg" alt="Product 1">
-					<h3>Milton Steel Bottle</h3>
-					<p>800 ml Can store hot and cold water for 7 hrs</p>
-					<a href="#" class="btn">Buy Now</a>
-				</div>
-				<div class="product">
-					<img src="book2.jpeg" alt="Product 2">
-					<h3>Rich Dad Poor Dad Book</h3>
-					<p>A beginner book for all finance geeks. In good condition</p>
-					<a href="#" class="btn">Buy Now</a>
-				</div>
-				<div class="product">
-					<img src="book.jpeg" alt="Product 3">
-					<h3>Don't say yes when you want to say no BOOK</h3>
-					<p>Self Help book. 4 years old</p>
-					<a href="#" class="btn">Buy Now</a>
-				</div>
-			</div>
-		</section>
-		<section class="sell">
-			<h2>Sell Your Products</h2>
-			<p>If you have any products to sell, you can create a listing on our website and connect with other students who are interested in buying them.</p>
-			<a href="#" class="btn">Sell Now</a>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 College OLX. All rights reserved.</p>
-	</footer>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Room essentials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Others...</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>College OLX</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Welcome to College OLX</h2>
+            <p><i>Buy and sell goods at cheaper prices with other students just like OLX.</i></p>
+            <a href="#" class="btn" onclick="handleShopNowClick()">Shop Now</a>
+        </section>
+        <section class="sell">
+            <h2>Sell Your Products</h2>
+            <p>If you have any products to sell, you can create a listing on our website and connect with other students who are interested in buying them.</p>
+            <a href="#" class="btn" onclick="handleSellNowClick()">Sell Now</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 College OLX. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
